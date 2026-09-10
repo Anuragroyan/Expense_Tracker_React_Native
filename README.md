@@ -40,6 +40,8 @@ React Native • Expo • JavaScript • React Hooks • Expo Router/Navigation 
 
 ▶️ Run the App
 
+📱 React Native App
+
 1. Clone the repository
 
 git clone <repository-url>
@@ -63,19 +65,44 @@ npm run android
 
 5. Run on iOS
 
-For macOS:
-
 cd ios
 pod install
 cd ..
-
-Then:
-
 npx react-native run-ios
 
 Or:
 
 npm run ios
+
+⸻
+
+🖥️ Backend
+
+1. Navigate to the backend folder
+
+cd backend
+
+2. Install backend dependencies
+
+npm install
+
+3. Start the backend server
+
+For development with Nodemon:
+
+npm run dev
+
+Or with Node.js:
+
+npm start
+
+4. Backend API
+
+The backend runs on the port configured in your .env file.
+
+PORT=3000
+
+Note: This project uses React Native CLI (Non-Expo) for the mobile application and a Node.js + Express.js backend.
 
 Note: This project uses React Native CLI (Non-Expo) and does not require Expo.
 
