@@ -32,19 +32,7 @@ Recent expenses are filtered and displayed based on transactions from the last 7
 
 The bill-splitting workflow allows users to select group members and divide a bill either equally or according to custom percentage values.
 
-Expense Tracker UI
-       │
-       ├──► Add Expense
-       ├──► View Expense
-       ├──► Update Expense
-       ├──► Delete Expense
-       │
-       ├──► Recent Expenses
-       │       └──► Last 7 Days
-       │
-       └──► Bill Splitting
-               ├──► Equal Split
-               └──► Percentage Split
+Expense Tracker UI → Add Expense → View Expense → Update Expense → Delete Expense → Recent Expenses (Last 7 Days) → Bill Splitting (Equal Split • Percentage Split)
 
 🛠️ Tech Stack
 
@@ -61,25 +49,35 @@ cd expense-tracker
 
 npm install
 
-3. Start Expo
+3. Start Metro
 
-npx expo start
+npm start
 
 4. Run on Android
 
-npx expo start --android
+npx react-native run-android
 
-Or press a in the Expo terminal.
+Or:
+
+npm run android
 
 5. Run on iOS
 
-npx expo start --ios
+For macOS:
 
-Or press i in the Expo terminal.
+cd ios
+pod install
+cd ..
 
-6. Run on Web
+Then:
 
-npx expo start --web
+npx react-native run-ios
+
+Or:
+
+npm run ios
+
+Note: This project uses React Native CLI (Non-Expo) and does not require Expo.
 
 Note: This version focuses on the frontend UI and user experience and does not require Firebase, MongoDB, or a backend server.
 
